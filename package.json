@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "typescript version",
   "scripts": {
+    "build": "babel src --extensions \".ts,.js\" --out-dir dist",
     "start": "nodemon index.js",
     "test": "jest --watchAll --verbose --forceExit --silent",
     "test:watch": "jest --watchAll --verbose --forceExit --silent"

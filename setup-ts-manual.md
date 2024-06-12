@@ -34,8 +34,6 @@ npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-ty
 
 ```
 touch babel.config.js index.js
-mkdir src
-touch src/main.js
 ```
 
 ## Step 2: Configure Babel
@@ -89,7 +87,6 @@ Update the `scripts` section of your `package.json` to include build and start c
 {
   "scripts": {
     "build": "babel src --extensions \".ts,.js\" --out-dir dist",
-    "start": "node dist/index.js"
   }
 }
 ```

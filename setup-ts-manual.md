@@ -91,7 +91,7 @@ Update the `scripts` section of your `package.json` to include build and start c
 }
 ```
 
-## 6. Configure Jest for TypeScript
+## Step 6. Configure Jest for TypeScript
 
 If you’re using Jest for testing, you need to configure it to handle TypeScript. Install the necessary dependencies:
 
@@ -113,7 +113,7 @@ module.exports = {
 };
 ```
 
-## 7. Type-Checking with `tsc`
+## Step 7. Type-Checking with `tsc`
 
 Since Babel does not perform type-checking, you should use the TypeScript compiler (`tsc`) for type-checking. Add a script in your `package.json` to run type-checking:
 
@@ -127,7 +127,22 @@ Since Babel does not perform type-checking, you should use the TypeScript compil
 
 Run `npm run type-check` to perform type-checking.
 
-## 8. Sample Project Structure
+## Step 8 creat `jest.config.js`
+
+```
+module.exports = {
+    preset: 'ts-jest',
+    testEnvironment: 'node',
+    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+    transform: {
+      '^.+\\.tsx?$': 'ts-jest',
+    },
+    testMatch: ['**/?(*.)+(spec|test).[tj]s?(x)'],
+  };
+  
+```
+
+## Step 9. Sample Project Structure
 
 ```lua
 my-typescript-project/

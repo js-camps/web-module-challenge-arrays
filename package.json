@@ -5,6 +5,7 @@
   "scripts": {
     "build": "babel src --extensions \".ts,.js\" --out-dir dist",
     "start": "nodemon index.js",
+    "type-check": "tsc --noEmit",
     "test": "jest --watchAll --verbose --forceExit --silent",
     "test:watch": "jest --watchAll --verbose --forceExit --silent"
   },
@@ -27,7 +28,9 @@
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.14.2",
+    "ts-jest": "^29.1.4",
     "typescript": "^5.4.5"
   }
 }

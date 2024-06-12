@@ -1,13 +1,16 @@
 {
-    "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "strict": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true,
-      "noEmit": true
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "**/*.test.ts"]
-  }
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true, // Ensure declaration files are generated
+    "declarationDir": "./dist" // Optional: specify where to put declaration files
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

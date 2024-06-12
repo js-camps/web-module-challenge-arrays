@@ -1,0 +1,22 @@
+{
+  "name": "web-module-challenge-arrays",
+  "version": "1.0.0",
+  "description": "typescript version",
+  "scripts": {
+    "test": "jest --watchAll --verbose --forceExit --silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-camps/web-module-challenge-arrays.git"
+  },
+  "keywords": [
+    "array",
+    "typescript"
+  ],
+  "author": "rjgeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/js-camps/web-module-challenge-arrays/issues"
+  },
+  "homepage": "https://github.com/js-camps/web-module-challenge-arrays#readme"
+}
